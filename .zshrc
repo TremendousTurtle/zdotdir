@@ -29,7 +29,7 @@ autoload -Uz $fpath[1]/*(.:t)
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 
-source /usr/share/powerline/bindings/zsh/powerline.zsh
+[[ -d ${HOME:-~}/.local/share/fnm ]] && eval "$(fnm env --use-on-cd)"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
