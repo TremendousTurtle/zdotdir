@@ -36,7 +36,8 @@ ohmyzsh/ohmyzsh path:plugins/ssh-agent
 ohmyzsh/ohmyzsh path:plugins/gpg-agent
 
 ### Framework: zsh-utils
-belak/zsh-utils path:history
+# belak/zsh-utils path:history
+$ZDOTDIR/custom/plugins/history
 belak/zsh-utils path:utility
 belak/zsh-utils path:editor
 
