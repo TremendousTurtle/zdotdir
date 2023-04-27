@@ -38,7 +38,7 @@ agkozak/zsh-z
 #
 ###
 $ZDOTDIR/.aliases
-#$ZDOTDIR/custom/plugins/example
+$ZDOTDIR/custom/plugins/poetry
 
 ### Local Plugins with Variables
 #
@@ -128,6 +128,8 @@ ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
 ohmyzsh/ohmyzsh path:plugins/command-not-found
 ohmyzsh/ohmyzsh path:plugins/sudo
 ohmyzsh/ohmyzsh path:plugins/direnv
+ohmyzsh/ohmyzsh path:plugins/ssh-agent
+ohmyzsh/ohmyzsh path:plugins/gpg-agent
 
 ### Framework: zsh-utils
 #
@@ -153,7 +155,7 @@ belak/zsh-utils path:editor
 #
 ###
 # Syntax highlighting
-zdharma-continuum/fast-syntax-highlighting kind:defer
+zdharma-continuum/fast-syntax-highlighting
 
 
 ### Completions
@@ -186,5 +188,5 @@ belak/zsh-utils path:completion
 ###
 
 # These popular core plugins should be loaded at the end
-zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
