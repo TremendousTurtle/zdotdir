@@ -13,6 +13,7 @@ agkozak/zsh-z
 $ZDOTDIR/.aliases
 $ZDOTDIR/custom/plugins/poetry
 $ZDOTDIR/custom/plugins/tmux
+$ZDOTDIR/custom/plugins/export-zsh.plugin.zsh
 
 ### Prompts
 romkatv/powerlevel10k

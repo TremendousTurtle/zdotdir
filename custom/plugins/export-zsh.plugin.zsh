@@ -1,0 +1,1 @@
+export ZSH=$(antidote path ohmyzsh/ohmyzsh)
