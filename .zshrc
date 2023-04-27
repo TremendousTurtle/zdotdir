@@ -27,6 +27,10 @@ autoload -Uz $fpath[1]/*(.:t)
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+
 # Enable fnm "use on cd" if fnm is installed
 [[ -d ${HOME:-~}/.local/share/fnm ]] && eval "$(fnm env --use-on-cd)"
 
