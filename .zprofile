@@ -29,7 +29,13 @@ typeset -gU path fpath
 # Set the list of directories that zsh searches for commands.
 path=(
   $HOME/{,s}bin(N)
+  $HOME/go/bin(N)
+  $HOME/.local/bin(N)
+  $HOME/.local/share/fnm(N)
+  $HOME/.dotnet/tools(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
+  /usr/local/go/bin(N)
+  /etc/poetry/bin(N)
   $path
 )
