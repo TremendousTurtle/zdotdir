@@ -4,6 +4,7 @@
 #
 
 # NOTE: .zshenv needs to live at ~/.zshenv, not in $ZDOTDIR!
+# This file is what gets linked into the actual home directory
 
 # Set ZDOTDIR if you want to re-home Zsh.
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
