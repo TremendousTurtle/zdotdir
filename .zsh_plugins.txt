@@ -39,6 +39,7 @@ agkozak/zsh-z
 ###
 $ZDOTDIR/.aliases
 $ZDOTDIR/custom/plugins/poetry
+$ZDOTDIR/custom/plugins/tmux
 
 ### Local Plugins with Variables
 #
