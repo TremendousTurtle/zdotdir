@@ -39,3 +39,10 @@ alias please=sudo
 alias zshrc='${EDITOR:-vim} "${ZDOTDIR:-$HOME}"/.zshrc'
 alias zbench='for i in {1..10}; do /usr/bin/time zsh -lic exit; done'
 alias zdot='cd ${ZDOTDIR:-~}'
+
+if [[ "$HOST" == winterfell ]]; then
+  alias sudom='sudo -u media'
+  alias sudodb='sudo -u discordbot'
+  alias restartmeta='sudo systemctl restart metadataapi.service && systemctl --no-pager --lines=0 status flower.service metadataapi.service celery.service'
+  alias metastatus='systemctl --no-pager --lines=0 status flower.service metadataapi.service celery.service'
+fi
