@@ -34,5 +34,12 @@ HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 # Enable fnm "use on cd" if fnm is installed
 [[ -d ${HOME:-~}/.local/share/fnm ]] && eval "$(fnm env --use-on-cd)"
 
+# pyenv configuration
+if [[ -d ${HOME:-~}/.pyenv ]]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
