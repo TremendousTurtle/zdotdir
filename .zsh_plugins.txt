@@ -46,6 +46,7 @@ zdharma-continuum/fast-syntax-highlighting
 
 ### Completions
 zsh-users/zsh-completions path:src kind:fpath
+$ZDOTDIR/custom/plugins/compstyle-zshink kind:fpath
 
 # Compinit plugin
 belak/zsh-utils path:completion

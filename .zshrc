@@ -31,6 +31,14 @@ bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
+# Use custom compstyle zshink
+compstyle zshink
+
+# If pipx is installed then register its completions
+if [[ -x $(command -v pipx 2>/dev/null) ]]; then
+  eval "$(register-python-argcomplete pipx)"
+fi
+
 # Enable fnm "use on cd" if fnm is installed
 [[ -d ${HOME:-~}/.local/share/fnm ]] && eval "$(fnm env --use-on-cd)"
 
